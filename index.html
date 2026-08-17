@@ -35,8 +35,11 @@
 
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
+  html{height:100%;}
   body{
     margin:0;
+    min-height:100vh;
+    display:flex; flex-direction:column;
     background:var(--canvas);
     color:var(--ink);
     font-family:'IBM Plex Sans', -apple-system, sans-serif;
@@ -53,6 +56,7 @@
   header{
     border-bottom:1px solid var(--line);
     background:var(--paper);
+    flex:0 0 auto;
   }
   .headbar{
     display:flex; align-items:center; justify-content:space-between;
@@ -81,6 +85,7 @@
   .hero{
     position:relative;
     padding:26px 0 22px;
+    flex:0 0 auto;
     background:
       radial-gradient(1000px 420px at 85% -10%, rgba(37,99,235,0.06), transparent 60%),
       radial-gradient(900px 380px at 8% 0%, rgba(4,120,87,0.06), transparent 55%);
@@ -137,7 +142,7 @@
   }
 
   /* ---------------- panel section ---------------- */
-  .panel{padding:4px 0 28px; position:relative;}
+  .panel{padding:4px 0 28px; position:relative; flex:1 1 auto; display:flex; flex-direction:column; justify-content:center;}
   .panel-head{
     display:flex; align-items:baseline; justify-content:space-between;
     margin-bottom:14px; gap:16px; flex-wrap:wrap;
@@ -244,6 +249,7 @@
     border-top:1px solid var(--line);
     background:var(--paper);
     padding:14px 0;
+    flex:0 0 auto;
   }
   .foot-row{
     display:flex; justify-content:space-between; align-items:flex-start;
