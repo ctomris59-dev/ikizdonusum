@@ -107,57 +107,66 @@
   .hero-chip{border:1px solid #D8E3E8;background:rgba(255,255,255,.72);backdrop-filter:blur(8px);border-radius:999px;padding:5px 9px;color:#536776;font-size:9px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
   .journey{
     background:linear-gradient(135deg,#071D3C 0%,#0B365A 60%,#0B5A4A 120%);
-    color:#fff;border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:15px 16px;
+    color:#fff;border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:16px 18px;
     box-shadow:0 22px 60px rgba(6,27,58,.16);position:relative;overflow:hidden
   }
   .journey:before{content:"";position:absolute;width:170px;height:170px;border-radius:50%;right:-60px;top:-95px;background:rgba(230,184,32,.12)}
   .journey-top{position:relative;display:flex;align-items:center;justify-content:space-between;gap:12px}
-  .journey-title{font:700 11px/1.2 'Manrope',sans-serif;color:#E7EEF8;text-transform:uppercase;letter-spacing:.08em}
-  .journey-score{font:800 24px/1 'Manrope',sans-serif;color:#F4D759}
-  .journey-label{font-size:8px;color:#9FB6CA;text-align:right;text-transform:uppercase;letter-spacing:.08em;margin-top:2px}
+  .journey-title{font:800 13px/1.2 'Manrope',sans-serif;color:#F2F6FB;text-transform:uppercase;letter-spacing:.08em}
+  .journey-score{font:800 28px/1 'Manrope',sans-serif;color:#F4D759}
+  .journey-label{font-size:9px;color:#B8CADD;text-align:right;text-transform:uppercase;letter-spacing:.09em;margin-top:3px;font-weight:700}
   .journey-line{position:relative;margin-top:12px;height:2px;background:rgba(255,255,255,.12)}
   .journey-line:after{content:"";position:absolute;left:0;top:0;width:100%;height:2px;background:linear-gradient(90deg,#C8903C,#1A966A,#3974D6,#C24A4A,#E0B018)}
   .journey-items{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:5px;margin-top:9px}
-  .journey-item{text-align:center;font-size:7.5px;font-weight:700;color:#B6C8D9;line-height:1.25}
+  .journey-item{text-align:center;font-size:9.5px;font-weight:800;color:#D6E2ED;line-height:1.25}
   .journey-item b{display:block;width:8px;height:8px;border:2px solid #071D3C;border-radius:50%;margin:-14px auto 7px;background:#fff;box-shadow:0 0 0 1px rgba(255,255,255,.35)}
 
   /* TOOLS */
   .tools-section{min-height:0;padding:0 0 14px}
   .tools-wrap{height:100%;display:flex;flex-direction:column;min-height:0}
   .section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:9px;flex:0 0 auto}
-  .section-label{font:800 10px/1.2 'Manrope',sans-serif;color:#23384E;text-transform:uppercase;letter-spacing:.12em}
-  .section-note{font-size:9px;color:#8795A7}
+  .section-label{font:800 12px/1.2 'Manrope',sans-serif;color:#1B3148;text-transform:uppercase;letter-spacing:.12em}
+  .section-note{font-size:10px;color:#78879A;font-weight:600}
   .cards{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:11px;flex:1;min-height:0}
   .tool-card{
     --accent:#49627C;--soft:#EEF2F6;
     position:relative;min-width:0;min-height:0;display:flex;flex-direction:column;
     background:rgba(255,255,255,.95);border:1px solid var(--line);border-radius:18px;
-    padding:13px 13px 11px;box-shadow:var(--shadow);overflow:hidden;
+    padding:15px 14px 12px;box-shadow:var(--shadow);overflow:hidden;
     transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease;
     isolation:isolate
   }
   .tool-card:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:var(--accent)}
   .tool-card:after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;right:-55px;top:-60px;background:var(--soft);z-index:-1;opacity:.65}
   .tool-card:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--accent) 45%,white);box-shadow:var(--shadow-hover)}
-  .card-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}
-  .card-code{display:inline-flex;align-items:center;gap:6px;font-size:8px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+  .card-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:11px}
+  .card-code{display:inline-flex;align-items:center;gap:6px;font-size:9.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
   .code-dot{width:6px;height:6px;border-radius:50%;background:var(--accent)}
-  .card-num{font:800 9px/1 'Manrope',sans-serif;color:#A4AFBC}
-  .icon-box{width:38px;height:38px;border-radius:12px;background:var(--soft);color:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:10px}
-  .icon-box svg{width:21px;height:21px;stroke-width:1.8}
-  .tool-card h2{margin:0 0 7px;font:800 15px/1.15 'Manrope',sans-serif;letter-spacing:-.025em;color:#10243A;min-height:35px}
-  .tool-card p{margin:0;color:#6A788A;font-size:10px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
-  .fact-row{display:flex;gap:5px;flex-wrap:wrap;margin:9px 0 auto;padding-top:8px}
-  .fact{border-radius:999px;background:#F5F7F9;border:1px solid #E8EDF2;color:#6B7888;font-size:7.5px;font-weight:700;padding:4px 6px;white-space:nowrap}
+  .card-num{font:800 10px/1 'Manrope',sans-serif;color:#9CA9B8}
+  .icon-box{width:42px;height:42px;border-radius:13px;background:var(--soft);color:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:11px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.55)}
+  .icon-box svg{width:23px;height:23px;stroke-width:1.9}
+  .tool-card h2{margin:0 0 8px;font:800 16.5px/1.16 'Manrope',sans-serif;letter-spacing:-.03em;color:#10243A;min-height:39px}
+  .tool-card p{margin:0;color:#5D6D80;font-size:11.5px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+  .fact-row{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 0;padding-top:0}
+  .fact{border-radius:999px;background:#F5F7F9;border:1px solid #E4EAF0;color:#607082;font-size:8.5px;font-weight:800;padding:5px 7px;white-space:nowrap}
+  .benefits{
+    margin-top:11px;padding:10px 10px 9px;border-radius:13px;
+    background:linear-gradient(180deg,color-mix(in srgb,var(--soft) 72%,white),#fff);
+    border:1px solid color-mix(in srgb,var(--accent) 14%,#E7ECF1);
+  }
+  .benefits-title{font-size:8.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+  .benefit{display:flex;align-items:flex-start;gap:7px;color:#4F6174;font-size:9.5px;font-weight:700;line-height:1.35;padding:3px 0}
+  .benefit i{width:5px;height:5px;border-radius:50%;background:var(--accent);flex:0 0 auto;margin-top:4px;box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 10%,transparent)}
+
   .cta{
-    margin-top:9px;display:flex;align-items:center;justify-content:space-between;gap:8px;text-decoration:none;
-    background:var(--accent);color:#fff;border-radius:10px;padding:9px 10px;font-size:9.5px;font-weight:800;
+    margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:8px;text-decoration:none;
+    background:var(--accent);color:#fff;border-radius:11px;padding:10px 11px;font-size:11px;font-weight:800;
     transition:filter .18s ease,transform .18s ease
   }
   .cta:hover{filter:brightness(1.06)}
   .cta svg{width:14px;height:14px;transition:transform .18s ease}
   .cta:hover svg{transform:translateX(2px)}
-  .domain{margin-top:7px;font-size:7.5px;color:#A0ACB9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .domain{margin-top:7px;font-size:8.5px;color:#95A3B2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:600}
 
   .digital{--accent:var(--digital);--soft:#F5ECDD}
   .green{--accent:var(--green);--soft:#DFF4E9}
@@ -213,11 +222,11 @@
     .hero-copy{font-size:11.5px;line-height:1.45}
     .hero-chips{margin-top:8px}
     .journey{padding:12px 14px}
-    .cards{gap:9px}.tool-card{padding:11px 11px 9px}
-    .icon-box{width:34px;height:34px;margin-bottom:8px}.icon-box svg{width:19px;height:19px}
-    .tool-card h2{font-size:13.5px;min-height:31px;margin-bottom:5px}
-    .tool-card p{font-size:9px;line-height:1.35;-webkit-line-clamp:3}
-    .fact-row{padding-top:6px;margin-top:6px}.cta{margin-top:7px;padding:8px 9px}.domain{margin-top:5px}
+    .cards{gap:9px}.tool-card{padding:12px 12px 10px}
+    .icon-box{width:37px;height:37px;margin-bottom:8px}.icon-box svg{width:20px;height:20px}
+    .tool-card h2{font-size:14.5px;min-height:34px;margin-bottom:6px}
+    .tool-card p{font-size:10px;line-height:1.38;-webkit-line-clamp:3}
+    .fact-row{margin-top:7px}.benefits{margin-top:7px;padding:7px 8px}.benefits-title{margin-bottom:3px}.benefit{font-size:8.5px;padding:2px 0}.cta{margin-top:7px;padding:8px 9px;font-size:10px}.domain{margin-top:5px}
     .footer-inner{height:42px}
   }
   @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
@@ -225,6 +234,7 @@
 </style>
 </head>
 <body>
+<!-- UI-FIX-PORTAL-2026-08-21-DENSE-CARDS-V2 -->
 <div class="portal">
   <header class="site-header">
     <div class="wrap header-inner">
@@ -261,7 +271,7 @@
         <div class="journey-top">
           <div>
             <div class="journey-title">Dönüşüm Haritası</div>
-            <div style="font-size:9px;color:#91A8BE;margin-top:3px">Beş tamamlayıcı gelişim alanı</div>
+            <div style="font-size:10.5px;color:#AFC1D2;margin-top:4px;font-weight:600">Beş tamamlayıcı gelişim alanı</div>
           </div>
           <div>
             <div class="journey-score">05</div>
@@ -296,6 +306,7 @@
           <h2>Dijital Olgunluk Analizi</h2>
           <p>İşletmenizin dijital olgunluk seviyesini altı eksende ölçün; teknoloji, süreç ve organizasyon gelişim adımlarınızı görün.</p>
           <div class="fact-row"><span class="fact">6 eksen</span><span class="fact">~8 dk</span><span class="fact">PDF rapor</span></div>
+          <div class="benefits"><div class="benefits-title">Odak alanları</div><div class="benefit"><i></i><span>Dijital strateji &amp; liderlik</span></div><div class="benefit"><i></i><span>Teknoloji &amp; veri altyapısı</span></div><div class="benefit"><i></i><span>Süreç &amp; organizasyon</span></div></div>
           <a class="cta" href="https://digitalolgunluk.vercel.app/" target="_blank" rel="noopener noreferrer">Analizi Başlat <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <div class="domain">digitalolgunluk.vercel.app</div>
         </article>
@@ -308,6 +319,7 @@
           <h2>Yeşil Dönüşüm &amp; Sürdürülebilirlik Karnesi</h2>
           <p>Enerji, su, döngüsel ekonomi ve ESG performansınızı sektörünüze göre değerlendirin; uyum ve destek fırsatlarını görün.</p>
           <div class="fact-row"><span class="fact">ESG</span><span class="fact">~10 dk</span><span class="fact">Sektörel</span></div>
+          <div class="benefits"><div class="benefits-title">Odak alanları</div><div class="benefit"><i></i><span>Enerji &amp; kaynak verimliliği</span></div><div class="benefit"><i></i><span>Döngüsel ekonomi &amp; ESG</span></div><div class="benefit"><i></i><span>Mevzuat &amp; destek fırsatları</span></div></div>
           <a class="cta" href="https://yesil-donusum.vercel.app/" target="_blank" rel="noopener noreferrer">Karneyi Doldur <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <div class="domain">yesil-donusum.vercel.app</div>
         </article>
@@ -320,6 +332,7 @@
           <h2>Firma Yapay Zekâ &amp; Otomasyon Rehberi</h2>
           <p>İK, pazarlama, stok ve müşteri ilişkilerinde işletmenize uygun yapay zekâ ve otomasyon araçlarını hızla keşfedin.</p>
           <div class="fact-row"><span class="fact">Araç önerisi</span><span class="fact">~7 dk</span><span class="fact">Pratik</span></div>
+          <div class="benefits"><div class="benefits-title">Odak alanları</div><div class="benefit"><i></i><span>İş süreçlerine uygun yapay zekâ</span></div><div class="benefit"><i></i><span>Otomasyon kullanım alanları</span></div><div class="benefit"><i></i><span>Hızlı ve uygulanabilir araç önerileri</span></div></div>
           <a class="cta" href="https://kobirehberi.vercel.app/" target="_blank" rel="noopener noreferrer">Rehbere Git <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <div class="domain">kobirehberi.vercel.app</div>
         </article>
@@ -332,6 +345,7 @@
           <h2>Afet &amp; İş Sürekliliği Skorkartı</h2>
           <p>Risk, acil durum, BT sürekliliği ve tedarik zinciri hazırlığınızı ölçün; dayanıklılığınızı artıracak aksiyonları belirleyin.</p>
           <div class="fact-row"><span class="fact">6 boyut</span><span class="fact">~7 dk</span><span class="fact">Aksiyon planı</span></div>
+          <div class="benefits"><div class="benefits-title">Odak alanları</div><div class="benefit"><i></i><span>Afet hazırlığı &amp; kritik süreçler</span></div><div class="benefit"><i></i><span>BT &amp; tedarik sürekliliği</span></div><div class="benefit"><i></i><span>Öncelikli dayanıklılık aksiyonları</span></div></div>
           <a class="cta" href="https://afet-lime.vercel.app/" target="_blank" rel="noopener noreferrer">Skorkartı Doldur <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <div class="domain">afet-lime.vercel.app</div>
         </article>
@@ -344,6 +358,7 @@
           <h2>Verimlilik Ölçüm Aracı</h2>
           <p>İş gücü, süreç, üretim, stok, enerji ve zaman kayıplarını analiz edin; öncelikli iyileştirme alanlarınızı netleştirin.</p>
           <div class="fact-row"><span class="fact">6 boyut</span><span class="fact">24 soru</span><span class="fact">100 puan</span></div>
+          <div class="benefits"><div class="benefits-title">Odak alanları</div><div class="benefit"><i></i><span>İş gücü &amp; süreç kayıpları</span></div><div class="benefit"><i></i><span>Üretim, stok &amp; enerji</span></div><div class="benefit"><i></i><span>Zaman kayıpları &amp; öncelikler</span></div></div>
           <a class="cta" href="https://verimlilikskoru.vercel.app/" target="_blank" rel="noopener noreferrer">Verimliliği Ölç <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <div class="domain">verimlilikskoru.vercel.app</div>
         </article>
